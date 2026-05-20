@@ -15,7 +15,7 @@ spec:
       schedulerName: stork
       containers:
       - name: postgres
-        image: postgres:9.5
+        image: mirror.gcr.io/postgres:latest
         imagePullPolicy: "IfNotPresent"
         ports:
         - containerPort: 5432

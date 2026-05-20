@@ -73,7 +73,7 @@ EOF"
 
 desc ""
 desc "Populate the database with test data"
-run "kubectl -n $namespace exec -i $POD -- pgbench -i -s 50 pxdemo;"
+run "kubectl -n $namespace exec -i $POD -- pgbench -i -s 100 pxdemo;"
 
 ##########
 # get count
